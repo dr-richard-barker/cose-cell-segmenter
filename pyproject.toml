@@ -1,0 +1,25 @@
+[project]
+name = "cose-cell-segmenter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cellpose>=4.2.1.1",
+    "napari[pyqt6]>=0.9.1",
+    "pandas>=3.0.5",
+    "scikit-image>=0.26.0",
+    "tifffile>=2026.9.9",
+]
+
+[project.scripts]
+cose-cell-segmenter = "cose_cell_segmenter:main"
+
+[build-system]
+requires = ["uv_build>=0.11.29,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
