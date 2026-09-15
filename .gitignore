@@ -15,8 +15,3 @@ wheels/
 # OS cruft
 .DS_Store
 
-# Unrelated repo that ended up nested here by some other process — has its
-# own .git/remote (dr-richard-barker/lunar-regolith-blss-review), not part of
-# this project. Ignored so it never gets swept into this repo's history.
-lunar-regolith-blss-review/
-
