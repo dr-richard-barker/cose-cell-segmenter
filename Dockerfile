@@ -17,6 +17,6 @@ COPY src/ ./src/
 # but this is fine for now.
 RUN uv sync --no-dev --frozen
 
-EXPOSE 7860
+EXPOSE 8080
 
-CMD ["uv", "run", "uvicorn", "api:app", "--host", "0.0.0.0", "--port", "7860", "--app-dir", "src"]
+CMD ["sh", "-c", "uv run uvicorn api:app --host 0.0.0.0 --port ${PORT:-8080} --app-dir src"]
