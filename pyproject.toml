@@ -6,10 +6,13 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "cellpose>=4.2.1.1",
+    "fastapi>=0.141.1",
     "napari[pyqt6]>=0.9.1",
     "pandas>=3.0.5",
+    "python-multipart>=0.0.32",
     "scikit-image>=0.26.0",
     "tifffile>=2026.9.9",
+    "uvicorn[standard]>=0.53.0",
 ]
 
 [project.scripts]
